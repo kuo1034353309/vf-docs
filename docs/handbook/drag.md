@@ -2,6 +2,8 @@
 
 开启拖动 `dragOption.draggable = true` 后，有接收拖动事件能力。
 
+> 自定义组件 `custom` 需实例化时设置`dragOption`属性。 
+
 ## dragOption参数
 
 #### 拖动
@@ -16,7 +18,8 @@
 |  droppable | boolean | 开启掉落接收 |
 |  dragMoveCursor | string | 拖拽移动时鼠标样式 |
 |  actionData | string | 当前操作数据 |
-> 设置 `droppable = true` 后，可接收拖动组件。
+
+> 设置 `droppable = true` 后，可接收拖动组件，接收必须为`custom`。
 
 ## 事件
 
@@ -89,5 +92,11 @@ function onDragStart($event, $target) {
 
 > [弹出](https://vipkid-edu.github.io/vf-gui/play/#example/TestDrag)
 
-<iframe src="https://vipkid-edu.github.io/vf-gui/play/#example/TestDrag" height="500" width="100%"></iframe>
+<iframe
+     src="https://codesandbox.io/embed/dragexample-eul9l?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents.ts&theme=dark"
+     style="width:100%; height: 720px; border:0; border-radius: 4px; overflow:hidden;"
+     title="dragExample"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
